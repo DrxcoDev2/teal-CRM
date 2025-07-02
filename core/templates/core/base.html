@@ -12,7 +12,8 @@
 
             <div class="space-x-4">
                 <a href="{% url 'about' %}" class="text-white">About</a>
-                <a href="" class="py-4 px-6 text-white bg-teal-600 rounded-xl">Log in</a>
+                <a href="{% url 'logout' %}" class="text-white">Logout</a>
+                <a href="{% url 'login' %}" class="py-4 px-6 text-white bg-teal-600 rounded-xl">Log in</a>
                 <a href="{% url 'signup' %}" class="text-white py-4 px-6 bg-teal-300 rounded-xl">Sing up</a>
             </div>
         </nav>
