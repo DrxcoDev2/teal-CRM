@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tealcrm
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn tealcrm.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: tealcrm.settings
+      - key: SECRET_KEY
+        value: tu_clave_super_secreta
+      - key: DEBUG
+        value: false
